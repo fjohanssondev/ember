@@ -6,7 +6,7 @@ import { betterAuthContext } from "../plugins/auth";
 const app = new Elysia()
   .use(
     cors({
-      origin: process.env.FRONTEND_URL,
+      origin: ["http://localhost:5173", "https://ember-psi-eight.vercel.app/"],
       credentials: true,
     })
   )
