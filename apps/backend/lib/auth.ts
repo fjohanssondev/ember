@@ -4,6 +4,7 @@ import { openAPI } from "better-auth/plugins";
 import { db } from "./db";
 
 export const auth = betterAuth({
+  trustedOrigins: ["http://localhost:5173"],
   database: prismaAdapter(db, {
     provider: "postgresql",
   }),

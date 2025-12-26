@@ -1,13 +1,18 @@
 {
-  "name": "gameserver-platform",
+  "name": "@ember/source",
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "workspaces": ["backend", "frontend"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "turbo": "^2.7.2"
   },
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "packageManager": "bun@1.3.0"
 }

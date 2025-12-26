@@ -1,5 +1,5 @@
 import { treaty } from "@elysiajs/eden";
-import type { App } from "../../../backend/src/index";
+import type { App } from "@ember/types";
 
 export const client = treaty<App>("localhost:3000", {
   fetch: {

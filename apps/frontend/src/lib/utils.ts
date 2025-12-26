@@ -1,6 +1,5 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import type { GameStatus } from "../../../backend/generated/prisma_client/enums";
 import type { JSX } from "react";
 
 export function cn(...inputs: ClassValue[]) {

@@ -10,10 +10,7 @@ import { client } from "@/lib/eden";
 import { HeartPulse } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { useQuery } from "@tanstack/react-query";
-import type {
-  Games,
-  GameStatus,
-} from "../../../../backend/generated/prisma_client/enums";
+import type { Games, GameStatus } from "@ember/types";
 import { formatUptime } from "@/lib/utils";
 import { ServerStatusBadge } from "./server-status-badge";
 

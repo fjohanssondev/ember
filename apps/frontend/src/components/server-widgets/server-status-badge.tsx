@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import type { GameStatus } from "../../../../backend/generated/prisma_client/enums";
+import type { GameStatus } from "@ember/types";
 
 export function ServerStatusBadge({ status }: { status: GameStatus }) {
   switch (status) {
